@@ -13,7 +13,7 @@ time_taken=end-start
 print(f"time taken by append {time_taken}")
 
 
-nims=[]
+nums=[]
 start=time.time()
 for i in range(200000):
     nums.insert(0,i)
