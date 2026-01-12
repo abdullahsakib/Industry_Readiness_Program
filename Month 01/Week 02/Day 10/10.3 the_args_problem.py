@@ -9,8 +9,10 @@ def wrapper(func):
     return wrapped
 
 @wrapper
-def old_func():
-    print("Main function is running")
+def old_func(name):
+    print(f"Your name is {name}")
 
 
-old_func()
+old_func("Sakib")
+
+# Wrapper that takes no argument is valid for function that accepts no argument
