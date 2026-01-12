@@ -7,13 +7,9 @@ def wrapper(func):
         return result
     return wrapped
 
+@wrapper
 def old_func():
     print("Main function is running")
 
 
-new_func=wrapper(old_func)
-
-new_func()
-
-
-        
+old_func()

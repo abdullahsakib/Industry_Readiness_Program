@@ -1,19 +1,16 @@
 
+
 def wrapper(func):
-    def wrapped(*args,**kargs):
+    def wrapped():
         print("code before the functions runs")
-        result=func(*args,**kargs)
+        result=func()
         print("code after the functions runs")
         return result
     return wrapped
 
+@wrapper
 def old_func():
     print("Main function is running")
 
 
-new_func=wrapper(old_func)
-
-new_func()
-
-
-        
+old_func()
